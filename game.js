@@ -14,18 +14,22 @@ moves.push(board[x][y]); // A
 // Move Right to B
 y++;
 moves.push(board[x][y]); // B
+console.log(`\n locate : x = ${x}, y = ${y}`);
 
 // Move Right to C
 y++;
 moves.push(board[x][y]);
+console.log(`\n locate : x = ${x}, y = ${y}`);
 
 // Move Down to F
 x++;
 moves.push(board[x][y]);
+console.log(`\n locate : x = ${x}, y = ${y}`);
 
 // Move left to E
 y--;
 moves.push(board[x][y]);
+console.log(`\n locate : x = ${x}, y = ${y}`);
 
 console.log("Path:", moves.join(" → "));
 // Output: Path: A → B → C → F → E
